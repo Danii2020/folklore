@@ -1,7 +1,9 @@
 import { Navbar } from '../components';
 
 const Page = () => (
-  <div>
+  <div
+    className="bg-[#F6F6F6] overflow-hidden"
+  >
     <Navbar />
     {/* <Navbar />
     <Hero />
