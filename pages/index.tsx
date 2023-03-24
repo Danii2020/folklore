@@ -1,9 +1,9 @@
-import { Footer, Navbar } from '../components';
-import { About, Explore, Feedback, GetStarted, Hero, Insights, WhatsNew, World } from '../sections';
+import { Navbar } from '../components/index.js';
 
 const Page = () => (
   <div>
     <Navbar />
+    {/* <Navbar />
     <Hero />
     <About />
     <Explore />
@@ -12,7 +12,7 @@ const Page = () => (
     <World />
     <Insights />
     <Feedback />
-    <Footer />
+    <Footer /> */}
   </div>
 );
 

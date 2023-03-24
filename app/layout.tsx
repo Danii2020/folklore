@@ -1,6 +1,10 @@
 import '../styles/globals.css';
 
-const RootLayout = ({ children }) => (
+interface Props {
+    children: React.ReactNode
+}
+
+const RootLayout: React.FC<Props> = ({ children }) => (
   <html lang="en">
     <head>
       <link rel="preconnect" href="https://stijndv.com" />
