@@ -1,28 +1,33 @@
-export const exploreWorlds = [
+export const navCategories = [
   {
-    id: 'world-1',
-    imgUrl: '/planet-01.png',
-    title: 'The Hogwarts',
+    id: 'category-1',
+    title: 'Arte y coleccionables',
+    href: '/arte',
   },
   {
-    id: 'world-2',
-    imgUrl: '/planet-02.png',
-    title: 'The Upside Down',
+    id: 'category-2',
+    title: 'Joyería',
+    href: '/joyeria',
   },
   {
-    id: 'world-3',
-    imgUrl: '/planet-03.png',
-    title: 'Kadirojo Permai',
+    id: 'category-3',
+    title: 'Ropa',
+    href: '/ropa',
   },
   {
-    id: 'world-4',
-    imgUrl: '/planet-04.png',
-    title: 'Paradise Island',
+    id: 'category-4',
+    title: 'Hogar',
+    href: '/hogar',
   },
   {
-    id: 'world-5',
-    imgUrl: '/planet-05.png',
-    title: 'Hawkins Labs',
+    id: 'category-5',
+    title: 'Regalos',
+    href: '/regalos',
+  },
+  {
+    id: 'category-6',
+    title: 'Juguetes',
+    href: '/juguetes',
   },
 ];
 
