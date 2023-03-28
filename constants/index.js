@@ -58,39 +58,66 @@ export const heroCategories = [
   },
 ];
 
-export const newFeatures = [
+export const recentlyViewedProducts = [
   {
-    imgUrl: '/vrpano.svg',
-    title: 'A new world',
-    subtitle:
-        'we have the latest update with new world for you to try never mind',
+    id: 'product-1',
+    href: '/product-1',
+    price: 10.99,
+    imgUrl: 'https://i.etsystatic.com/29096897/r/il/52a0f2/3574416678/il_340x270.3574416678_11ex.jpg',
   },
   {
-    imgUrl: '/headset.svg',
-    title: 'More realistic',
-    subtitle:
-        'In the latest update, your eyes are narrow, making the world more realistic than ever',
-  },
-];
-
-export const insights = [
-  {
-    imgUrl: '/planet-06.png',
-    title: 'The launch of the Metaverse makes Elon musk ketar-ketir',
-    subtitle:
-        'Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.',
+    id: 'product-2',
+    href: '/product-2',
+    price: 9.99,
+    imgUrl: 'https://i.etsystatic.com/29096897/r/il/52a0f2/3574416678/il_340x270.3574416678_11ex.jpg',
   },
   {
-    imgUrl: '/planet-07.png',
-    title: '7 tips to easily master the madness of the Metaverse',
-    subtitle:
-        'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
+    id: 'product-3',
+    href: '/product-3',
+    price: 4.99,
+    imgUrl: 'https://i.etsystatic.com/29096897/r/il/52a0f2/3574416678/il_340x270.3574416678_11ex.jpg',
   },
   {
-    imgUrl: '/planet-08.png',
-    title: 'With one platform you can explore the whole world virtually',
-    subtitle:
-        'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
+    id: 'product-4',
+    href: '/product-4',
+    price: 15.99,
+    imgUrl: 'https://i.etsystatic.com/29096897/r/il/52a0f2/3574416678/il_340x270.3574416678_11ex.jpg',
+  },
+  {
+    id: 'product-5',
+    href: '/product-5',
+    price: 12.99,
+    imgUrl: 'https://i.etsystatic.com/29096897/r/il/52a0f2/3574416678/il_340x270.3574416678_11ex.jpg',
+  },
+  {
+    id: 'product-6',
+    href: '/product-6',
+    price: 5.99,
+    imgUrl: 'https://i.etsystatic.com/29096897/r/il/52a0f2/3574416678/il_340x270.3574416678_11ex.jpg',
+  },
+  {
+    id: 'product-7',
+    href: '/product-7',
+    price: 6.99,
+    imgUrl: 'https://i.etsystatic.com/29096897/r/il/52a0f2/3574416678/il_340x270.3574416678_11ex.jpg',
+  },
+  {
+    id: 'product-8',
+    href: '/product-8',
+    price: 13.99,
+    imgUrl: 'https://i.etsystatic.com/29096897/r/il/52a0f2/3574416678/il_340x270.3574416678_11ex.jpg',
+  },
+  {
+    id: 'product-9',
+    href: '/product-9',
+    price: 15.99,
+    imgUrl: 'https://i.etsystatic.com/29096897/r/il/52a0f2/3574416678/il_340x270.3574416678_11ex.jpg',
+  },
+  {
+    id: 'product-10',
+    href: '/product-10',
+    price: 11.99,
+    imgUrl: 'https://i.etsystatic.com/29096897/r/il/52a0f2/3574416678/il_340x270.3574416678_11ex.jpg',
   },
 ];
 

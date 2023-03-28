@@ -4,7 +4,7 @@ import styles from '../../styles';
 import { HeroCategories } from '../../components/index';
 
 const Hero = () => (
-  <div
+  <section
     className={`${styles.xPaddings} flex pt-3 pb-6
     justify-center items-center bg-[rgba(19,122,132,0.14)]
     `}
@@ -12,15 +12,14 @@ const Hero = () => (
     <div
       className="flex flex-col"
     >
-      <h2
+      <h1
         className={`${styles.heroHeading} mb-5 text-center`}
       >
-        Apoya el emprendimiento nacional,
-        encuentra cosas que te enamoren en Folklore.
-      </h2>
+        Apoya el emprendimiento, encuentra cosas que te enamoren en Folklore.
+      </h1>
       <HeroCategories />
     </div>
-  </div>
+  </section>
 );
 
 export default Hero;

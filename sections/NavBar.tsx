@@ -15,7 +15,7 @@ const NavBar = () => {
     <header role="banner">
       <div
         className={`${styles.xPaddings} py-2 max-w-[1400px] w-full m-auto
-      flex justify-between items-center flex-wrap bg-[#F6F6F6]`}
+      flex justify-between items-center flex-wrap`}
       >
         <h2 className={`${styles.brandName} mr-4`}>Folklore</h2>
         <nav

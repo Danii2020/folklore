@@ -3,7 +3,8 @@ import { heroCategories } from '../constants';
 
 const HeroCategories = () => (
   <ul
-    className="flex flex-wrap mt-4 justify-between items-center"
+    className="flex flex-wrap mt-4 md:px-9
+    px-5 justify-between items-center"
   >
     {
       heroCategories.map((category) => (
@@ -20,7 +21,8 @@ const HeroCategories = () => (
               flex-col"
             >
               <Image
-                className="rounded-full max-w-[114px] object-contain"
+                className="rounded-full max-w-[114px]
+                border-[0.5px] border-[#565454] object-contain"
                 width="114"
                 height="114"
                 src={category.imgUrl}

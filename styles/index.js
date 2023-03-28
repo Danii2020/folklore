@@ -4,7 +4,7 @@ const styles = {
 
   paddings: 'sm:p-16 xs:p-8 px-6 py-12',
   yPaddings: 'sm:py-16 xs:py-8 py-12',
-  xPaddings: 'sm:px-16 px-6',
+  xPaddings: 'sm:px-12 px-6',
   topPaddings: 'sm:pt-16 xs:pt-8 pt-12',
   bottomPaddings: 'sm:pb-16 xs:pb-8 pb-12',
 
@@ -17,9 +17,9 @@ const styles = {
   brandName:
   'font-semibold lg:text-[40px] md:text-[30px] sm:text-[15px] text-[30px] text-black',
   heroHeading:
+    'lg:text-[30px] md:text-[30px] sm:text-[20px] text-[20px] text-black',
+  subTitle:
     'lg:text-[20px] md:text-[20px] sm:text-[15px] text-[20px] text-black',
-  heroDText:
-    'md:w-[212px] sm:w-[80px] w-[60px] md:h-[108px] sm:h-[48px] h-[38px] md:border-[18px] border-[9px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]',
 };
 
 export default styles;

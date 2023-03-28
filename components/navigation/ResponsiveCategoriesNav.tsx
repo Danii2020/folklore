@@ -4,7 +4,7 @@ import styles from '../../styles';
 const ResponsiveCategoriesNav = () => (
   <nav
     role="navigation"
-    className={`${styles.xPaddings} right-0 py-4 w-[100%] bg-[#F6F6F6]
+    className={`${styles.xPaddings} right-0 py-4 w-[100%]
     block absolute bottom-0`}
   >
     <ul
