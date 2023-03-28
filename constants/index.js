@@ -31,10 +31,31 @@ export const navCategories = [
   },
 ];
 
-export const startingFeatures = [
-  'Find a world that suits you and you want to enter',
-  'Enter the world by reading basmalah to be safe',
-  'No need to beat around the bush, just stay on the gas and have fun',
+export const heroCategories = [
+  {
+    id: 'category-1',
+    title: 'Regalos personalizados',
+    href: '/regalos',
+    imgUrl: 'https://i.etsystatic.com/25792760/r/il/5da611/3405911484/il_300x300.3405911484_go20.jpg',
+  },
+  {
+    id: 'category-2',
+    title: 'Arte para el hogar',
+    href: '/arte',
+    imgUrl: 'https://i.etsystatic.com/17207134/c/769/769/197/59…/913c7a/3121451996/il_300x300.3121451996_695g.jpg',
+  },
+  {
+    id: 'category-3',
+    title: 'Manualidades',
+    href: '/manualidades',
+    imgUrl: 'https://i.etsystatic.com/20442851/c/2000/2000/500/…/a99d85/2952846478/il_300x300.2952846478_jtqc.jpg',
+  },
+  {
+    id: 'category-4',
+    title: 'Ropa',
+    href: '/ropa',
+    imgUrl: 'https://i.etsystatic.com/5521599/r/il/5e844b/3896086004/il_300x300.3896086004_e90s.jpg',
+  },
 ];
 
 export const newFeatures = [

@@ -1,6 +1,6 @@
 /* eslint-disable import/no-unresolved */
-import Navbar from './NavBar';
+import HeroCategories from './HeroCategories';
 
 export {
-  Navbar,
+  HeroCategories,
 };

@@ -1,12 +1,13 @@
-import { Navbar } from '../components';
+import { NavBar } from '../sections/index';
+import { Hero } from '../sections/landing/index';
 
 const Page = () => (
   <div
     className="bg-[#F6F6F6] overflow-hidden"
   >
-    <Navbar />
-    {/* <Navbar />
+    <NavBar />
     <Hero />
+    {/* <Navbar />
     <About />
     <Explore />
     <GetStarted />

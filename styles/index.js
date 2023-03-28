@@ -17,7 +17,7 @@ const styles = {
   brandName:
   'font-semibold lg:text-[40px] md:text-[30px] sm:text-[15px] text-[30px] text-black',
   heroHeading:
-    'font-bold lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white',
+    'lg:text-[20px] md:text-[20px] sm:text-[15px] text-[20px] text-black',
   heroDText:
     'md:w-[212px] sm:w-[80px] w-[60px] md:h-[108px] sm:h-[48px] h-[38px] md:border-[18px] border-[9px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]',
 };

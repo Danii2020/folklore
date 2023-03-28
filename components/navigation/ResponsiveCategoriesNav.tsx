@@ -1,11 +1,11 @@
 import { navCategories } from '../../constants/index';
 import styles from '../../styles';
 
-const ResponseiveCategoriesNav = () => (
+const ResponsiveCategoriesNav = () => (
   <nav
     role="navigation"
-    className={`${styles.xPaddings} py-4 bg-[#F6F6F6]
-  block `}
+    className={`${styles.xPaddings} right-0 py-4 w-[100%] bg-[#F6F6F6]
+    block absolute bottom-0`}
   >
     <ul
       className="flex flex-col
@@ -29,4 +29,4 @@ const ResponseiveCategoriesNav = () => (
 
 );
 
-export default ResponseiveCategoriesNav;
+export default ResponsiveCategoriesNav;

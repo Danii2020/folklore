@@ -5,14 +5,10 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import styles from '../styles';
-import SearchBar from './SearchBar';
-import SinginButton from './buttons/SinginButton';
-import FavoritesButton from './buttons/FavoritesButton';
-import CarButton from './buttons/CarButton';
-import CategoriesNav from './navigation/CategoriesNav';
-import ResponseiveCategoriesNav from './navigation/ResponsiveCategoriesNav';
+import { SinginButton, FavoritesButton, CarButton } from '../components/buttons/index';
+import { SearchBar, CategoriesNav, ResponsiveCategoriesNav } from '../components/navigation/index';
 
-const Navbar = () => {
+const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -50,7 +46,7 @@ const Navbar = () => {
         <SearchBar />
         {
           isMenuOpen && (
-            <ResponseiveCategoriesNav />
+            <ResponsiveCategoriesNav />
           )
         }
       </div>
@@ -59,4 +55,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
