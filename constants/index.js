@@ -121,6 +121,104 @@ export const recentlyViewedProducts = [
   },
 ];
 
+export const collections = [
+  {
+    id: 'collection-1',
+    href: '/collection-1',
+    name: 'Cuadros',
+    images: [
+      {
+        image1: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+      {
+        image2: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+      {
+        image3: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+      {
+        image4: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+    ],
+  },
+  {
+    id: 'collection-2',
+    href: '/collection-2',
+    name: 'Decoraciones',
+    images: [
+      {
+        image1: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+      {
+        image2: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+      {
+        image3: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+      {
+        image4: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+    ],
+  },
+  {
+    id: 'collection-3',
+    href: '/collection-3',
+    name: 'Regalos',
+    images: [
+      {
+        image1: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+      {
+        image2: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+      {
+        image3: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+      {
+        image4: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+    ],
+  },
+  {
+    id: 'collection-4',
+    href: '/collection-4',
+    name: 'Artesanias',
+    images: [
+      {
+        image1: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+      {
+        image2: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+      {
+        image3: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+      {
+        image4: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+    ],
+  },
+  {
+    id: 'collection-5',
+    href: '/collection-5',
+    name: 'Manualidades',
+    images: [
+      {
+        image1: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+      {
+        image2: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+      {
+        image3: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+      {
+        image4: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+      },
+    ],
+  },
+];
+
 export const socials = [
   {
     name: 'twitter',

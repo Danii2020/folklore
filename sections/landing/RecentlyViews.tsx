@@ -5,7 +5,7 @@ import { RecentlyViewedContainer } from '../../components/index';
 
 const RecentlyViewed = () => (
   <section
-    className={`${styles.xPaddings} md:mt-10 mt-5 pt-2 pb-6
+    className={`${styles.xPaddings} md:mt-10 mt-5 py-2
     max-w-[1400px] w-full m-auto bg-[#FFFFFF]
     `}
   >
