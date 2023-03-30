@@ -126,18 +126,23 @@ export const collections = [
     id: 'collection-1',
     href: '/collection-1',
     name: 'Cuadros',
+    numProducts: 15,
     images: [
       {
-        image1: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        imgUrl: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        href: '/cuadros',
       },
       {
-        image2: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        imgUrl: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        href: '/cuadros',
       },
       {
-        image3: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        imgUrl: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        href: '/cuadros',
       },
       {
-        image4: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        imgUrl: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        href: '/cuadros',
       },
     ],
   },
@@ -145,18 +150,23 @@ export const collections = [
     id: 'collection-2',
     href: '/collection-2',
     name: 'Decoraciones',
+    numProducts: 10,
     images: [
       {
-        image1: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        imgUrl: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        href: '/decoraciones',
       },
       {
-        image2: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        imgUrl: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        href: '/decoraciones',
       },
       {
-        image3: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        imgUrl: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        href: '/decoraciones',
       },
       {
-        image4: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        imgUrl: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        href: '/decoraciones',
       },
     ],
   },
@@ -164,18 +174,24 @@ export const collections = [
     id: 'collection-3',
     href: '/collection-3',
     name: 'Regalos',
+    numProducts: 20,
     images: [
       {
-        image1: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        imgUrl: 'https://i.etsystatic.com/22297222/r/il/fa4cff/2857715104/il_500x500.2857715104_jugv.jpg',
+        href: '/regalos',
       },
       {
-        image2: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        imgUrl: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        href: '/regalos',
       },
       {
-        image3: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        imgUrl: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        href: '/regalos',
       },
       {
-        image4: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        imgUrl: 'https://i.etsystatic.com/15338498/r/il/ef01fe/1809438667/il_500x500.1809438667_lq0p.jpg',
+
+        href: '/regalos',
       },
     ],
   },
@@ -183,37 +199,24 @@ export const collections = [
     id: 'collection-4',
     href: '/collection-4',
     name: 'Artesanias',
+    numProducts: 5,
     images: [
       {
-        image1: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        imgUrl: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        href: '/artesanias',
       },
       {
-        image2: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        imgUrl: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        href: '/artesanias',
       },
       {
-        image3: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        imgUrl: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+
+        href: '/artesanias',
       },
       {
-        image4: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
-      },
-    ],
-  },
-  {
-    id: 'collection-5',
-    href: '/collection-5',
-    name: 'Manualidades',
-    images: [
-      {
-        image1: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
-      },
-      {
-        image2: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
-      },
-      {
-        image3: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
-      },
-      {
-        image4: 'https://i.etsystatic.com/27751508/r/il/254978/4263660916/il_340x270.4263660916_c7z1.jpg',
+        imgUrl: 'https://i.etsystatic.com/16555624/r/il/d00f2b/1976961371/il_500x500.1976961371_a7lm.jpg',
+        href: '/artesanias',
       },
     ],
   },

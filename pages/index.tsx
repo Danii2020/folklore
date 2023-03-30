@@ -1,13 +1,14 @@
 import { NavBar } from '../sections/index';
-import { Hero, RecentlyViewed } from '../sections/landing/index';
+import { Hero, RecentlyViewed, Collections } from '../sections/landing/index';
 
 const Page = () => (
   <div
-    className="bg-[#FFFFFF] overflow-hidden"
+    className="bg-[#FFFFFF]"
   >
     <NavBar />
     <Hero />
     <RecentlyViewed />
+    <Collections />
     {/* <Navbar />
     <About />
     <Explore />
