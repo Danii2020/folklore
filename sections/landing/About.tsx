@@ -59,7 +59,7 @@ const About = () => (
           <h3
             className={`${styles.heroSubSubtitle} md:text-left text-center`}
           >
-            Y en ayudar al medio ambiente totalmente en las personas
+            Y en ayudar al medio ambiente
           </h3>
           <p
             className={`${styles.paragraph} md:text-left text-center inline`}
