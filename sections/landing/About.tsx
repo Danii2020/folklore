@@ -9,7 +9,7 @@ const About = () => (
   >
     <div
       className="flex flex-col justify-center items-center
-      py-3 px-3"
+      py-3"
     >
       <h2
         className={`${styles.heroSubtitle} text-center mb-6`}

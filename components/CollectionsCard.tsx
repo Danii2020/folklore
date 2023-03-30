@@ -9,6 +9,7 @@ const CollectionsCard = () => (
     {
       collections.map((collection) => (
         <div
+          key={collection.id}
           className="flex flex-col md:w-[305px] md:h-[310px]
             rounded-[15px] border-[1px] border-[#BBB5B5]
             w-[305px] h-[310px] mb-3 z-0"

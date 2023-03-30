@@ -1,3 +1,4 @@
+import React from 'react';
 import { NavBar } from '../sections/index';
 import { Hero, RecentlyViewed, Collections, About } from '../sections/landing/index';
 

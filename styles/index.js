@@ -19,7 +19,7 @@ const styles = {
   heroHeading:
     'lg:text-[30px] md:text-[30px] sm:text-[20px] text-[30px] text-black',
   heroSubtitle:
-    'font-light lg:text-[44px] md:text-[44px] sm:text-[34px] text-[44px] text-black',
+    'font-light lg:text-[44px] md:text-[44px] sm:text-[34px] text-[40px] text-black',
   heroSubSubtitle:
     'font-medium lg:text-[28px] md:text-[28px] sm:text-[25px] text-[28px] text-black',
   subTitle:
