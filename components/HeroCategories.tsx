@@ -22,7 +22,9 @@ const HeroCategories = () => (
             >
               <Image
                 className="rounded-full max-w-[114px]
-                border-[0.5px] border-[#565454] object-contain"
+                border-[0.5px] border-[#565454] object-contain
+                hover:shadow-md transition duration-300 ease-in-out
+                transform hover:scale-105"
                 width="114"
                 height="114"
                 src={category.imgUrl}

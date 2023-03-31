@@ -24,7 +24,8 @@ const Footer = () => (
       >
         <li key="terms-cons">
           <a
-            className={`${styles.footerText} text-center`}
+            className={`${styles.footerText} text-center hover:border-b
+            border-black`}
             href="/terminos-condiciones"
           >
             Términos y condiciones
@@ -32,7 +33,8 @@ const Footer = () => (
         </li>
         <li key="privacy">
           <a
-            className={`${styles.footerText} text-center`}
+            className={`${styles.footerText} text-center hover:border-b
+            border-black`}
             href="/privacidad"
           >
             Privacidad
@@ -40,7 +42,8 @@ const Footer = () => (
         </li>
         <li key="faqs">
           <a
-            className={`${styles.footerText} text-center`}
+            className={`${styles.footerText} text-center hover:border-b
+            border-black`}
             href="/preguntas-frecuentes"
           >
             Preguntas frecuentas
@@ -58,14 +61,20 @@ const Footer = () => (
               <li
                 key={social.name}
               >
-                <a href={social.href}>
-                  <Image
-                    className="object-contain"
-                    width="36"
-                    height="36"
-                    src={social.url}
-                    alt={social.name}
-                  />
+                <a
+                  className="block rounded-full hover:bg-[rgba(96,165,250,0.25)]
+                  md:p-2"
+                  href={social.href}
+                >
+                  <span>
+                    <Image
+                      className="object-contain"
+                      width="36"
+                      height="36"
+                      src={social.url}
+                      alt={social.name}
+                    />
+                  </span>
                 </a>
               </li>
             ))

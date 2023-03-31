@@ -12,14 +12,16 @@ const RecentlyViewedContainer = () => (
         >
           <div
             className="flex md:w-[241px] md:h-[190px]
-                w-[150px] h-[120px] relative"
+            w-[150px] h-[120px] relative transition duration-300
+            ease-in-out transform hover:scale-110
+            hover:shadow-lg"
           >
             <a
               href={product.href}
             >
               <img
                 className="w-[100%] rounded-[6px]
-                    object-contain"
+                object-contain"
                 width="241"
                 height="190"
                 src={product.imgUrl}

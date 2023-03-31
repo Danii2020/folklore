@@ -48,7 +48,7 @@ export const heroCategories = [
     id: 'category-3',
     title: 'Manualidades',
     href: '/manualidades',
-    imgUrl: 'https://i.etsystatic.com/20442851/c/2000/2000/500/…/a99d85/2952846478/il_300x300.2952846478_jtqc.jpg',
+    imgUrl: 'https://i.etsystatic.com/20442851/c/2000/2000/500/0/il/a99d85/2952846478/il_300x300.2952846478_jtqc.jpg',
   },
   {
     id: 'category-4',

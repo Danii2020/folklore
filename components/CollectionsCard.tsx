@@ -40,10 +40,12 @@ const CollectionsCard = () => (
               >
                 <a href={collection.images[0].href}>
                   <div
-                    className="relative z-10 m-0 h-[50%] overflow-hidden"
+                    className="relative z-10 m-0 h-[50%]"
                   >
                     <Image
-                      className="block w-[100%] h-[100%] object-cover"
+                      className="block w-[100%] h-[100%] object-cover
+                      transition duration-300 ease-in-out transform
+                      hover:scale-110 hover:shadow-lg"
                       width="500"
                       height="500"
                       src={collection.images[0].imgUrl}
@@ -54,10 +56,12 @@ const CollectionsCard = () => (
                 <div className="py-1" />
                 <a href={collection.images[1].href}>
                   <div
-                    className="relative z-10 m-0 h-[50%] overflow-hidden"
+                    className="relative z-10 m-0 h-[50%]"
                   >
                     <Image
-                      className="block w-[100%] h-[100%] object-cover rounded-bl-[15px]"
+                      className="block w-[100%] h-[100%] object-cover
+                      rounded-bl-[15px] transition duration-300 ease-in-out
+                      transform hover:scale-110 hover:shadow-lg"
                       width="500"
                       height="500"
                       src={collection.images[1].imgUrl}
@@ -75,7 +79,9 @@ const CollectionsCard = () => (
                     className="relative z-10 m-0 h-[50%]"
                   >
                     <Image
-                      className="block w-[100%] h-[100%] object-cover"
+                      className="block w-[100%] h-[100%] object-cover
+                      transition duration-300 ease-in-out transform
+                      hover:scale-110 hover:shadow-lg"
                       width="500"
                       height="500"
                       src={collection.images[2].imgUrl}
@@ -89,7 +95,9 @@ const CollectionsCard = () => (
                     className="relative z-10 m-0 h-[50%]"
                   >
                     <Image
-                      className="block w-[100%] h-[100%] object-cover rounded-br-[15px]"
+                      className="block w-[100%] h-[100%] object-cover
+                      rounded-br-[15px] transition duration-300 ease-in-out
+                      transform hover:scale-110 hover:shadow-lg"
                       width="500"
                       height="500"
                       src={collection.images[3].imgUrl}

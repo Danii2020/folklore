@@ -51,6 +51,7 @@ const NavBar = () => {
         }
       </div>
       <CategoriesNav />
+      <div className="shadow-md py-0.5" />
     </header>
   );
 };

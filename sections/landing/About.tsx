@@ -81,7 +81,9 @@ const About = () => (
         </h4>
         <a
           className="items-center rounded-full border-[2.5px]
-          border-[#373434] p-3 font-normal text-[16px]"
+          border-[#373434] p-3 font-normal text-[16px]
+          transition duration-300 ease-in-out
+          transform hover:scale-103 hover:shadow-lg"
           href="/ayuda"
         >
           Ir al centro de ayuda

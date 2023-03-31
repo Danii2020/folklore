@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const FavoritesButton = () => (
   <button
-    className="mx-3"
+    className="mx-3 rounded-full hover:bg-[rgba(96,165,250,0.25)] md:p-4"
     type="button"
   >
     <Image
