@@ -1,5 +1,5 @@
 import { NavBar } from '../sections/index';
-import { Hero, RecentlyViewed, Collections, About } from '../sections/landing/index';
+import { Hero, RecentlyViewed, Collections, About, Footer } from '../sections/landing/index';
 
 const Page = () => (
   <div
@@ -14,15 +14,11 @@ const Page = () => (
     >
       <About />
     </div>
-    {/* <Navbar />
-    <About />
-    <Explore />
-    <GetStarted />
-    <WhatsNew />
-    <World />
-    <Insights />
-    <Feedback />
-    <Footer /> */}
+    <div
+      className="bg-[rgba(19,122,132,0.14)]"
+    >
+      <Footer />
+    </div>
   </div>
 );
 

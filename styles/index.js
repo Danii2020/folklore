@@ -26,6 +26,8 @@ const styles = {
     'lg:text-[20px] md:text-[20px] sm:text-[15px] text-[20px] text-black',
   paragraph:
     'font-normal lg:text-[16px] md:text-[16px] sm:text-[16px] text-[16px] text-black',
+  footerText:
+    'font-light lg:text-[20px] md:text-[20px] sm:text-[20px] text-[20px] text-black',
 };
 
 export default styles;

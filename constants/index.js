@@ -224,19 +224,13 @@ export const collections = [
 
 export const socials = [
   {
-    name: 'twitter',
-    url: '/twitter.svg',
-  },
-  {
-    name: 'linkedin',
-    url: '/linkedin.svg',
-  },
-  {
     name: 'instagram',
+    href: 'instagram.com',
     url: '/instagram.svg',
   },
   {
-    name: 'facebook',
-    url: '/facebook.svg',
+    name: 'youtube',
+    href: 'youtube.com',
+    url: '/youtube.svg',
   },
 ];
