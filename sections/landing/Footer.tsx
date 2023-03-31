@@ -51,7 +51,7 @@ const Footer = () => (
         </li>
       </ul>
       <div
-        className="flex flex-col justify-center items-center md:ml-20"
+        className="flex flex-col justify-center items-center"
       >
         <ul
           className="flex flex-row justify-between gap-1"

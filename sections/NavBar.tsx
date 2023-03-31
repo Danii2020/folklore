@@ -17,11 +17,34 @@ const NavBar = () => {
         className={`${styles.xPaddings} py-2 max-w-[1400px] w-full m-auto
       flex justify-between items-center flex-wrap`}
       >
-        <h2 className={`${styles.brandName} mr-4`}>Folklore</h2>
+        <h2 className={`${styles.brandName} mr-2`}>Folklore</h2>
+        <div
+          className="flex flex-row flex-1 grow shrink md:order-none
+          order-last"
+        >
+          <button
+            type="button"
+            className="md:hidden ml-2 mr-5"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <Image
+              width="24"
+              height="24"
+              src="/hamburger-menu.svg"
+              alt="hamburger menu"
+            />
+          </button>
+          <SearchBar />
+          {
+            isMenuOpen && (
+              <ResponsiveCategoriesNav />
+            )
+          }
+        </div>
         <nav
           role="navigation"
-          className="flex md:ml-4 md:order-last
-        md:mb-0 mb-2"
+          className="flex md:ml-4 flex-shrink
+          md:mb-0 mb-2 flex-row"
         >
           <ul
             className="flex justify-between items-center"
@@ -31,24 +54,6 @@ const NavBar = () => {
             <li><CarButton /></li>
           </ul>
         </nav>
-        <button
-          type="button"
-          className="md:hidden ml-2 mr-5"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          <Image
-            width="24"
-            height="24"
-            src="/hamburger-menu.svg"
-            alt="hamburger menu"
-          />
-        </button>
-        <SearchBar />
-        {
-          isMenuOpen && (
-            <ResponsiveCategoriesNav />
-          )
-        }
       </div>
       <CategoriesNav />
       <div className="shadow-md py-0.5" />
