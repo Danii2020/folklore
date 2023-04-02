@@ -11,7 +11,8 @@ const CategoriesNav = () => (
       {navCategories.map((category) => (
         <li key={category.id}>
           <a
-            className="font-normal md:text-[16px] text-[20px]"
+            className="font-normal md:text-[16px] text-[20px]
+            hover:border-b border-black"
             href={category.href}
           >
             {category.title}
