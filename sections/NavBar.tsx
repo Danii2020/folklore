@@ -5,7 +5,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import styles from '../styles';
-import { SinginButton, FavoritesButton, CarButton } from '../components/buttons/index';
+import { SinginButton, FavoritesButton, CartButton } from '../components/buttons/index';
 import { SearchBar, CategoriesNav, ResponsiveCategoriesNav } from '../components/navigation/index';
 
 const NavBar = () => {
@@ -14,10 +14,12 @@ const NavBar = () => {
   return (
     <header role="banner">
       <div
-        className={`${styles.xPaddings} py-2 max-w-[1400px] w-full m-auto
+        className={`${styles.xPaddings} py-2 max-w-[1400px] w-[100%] m-auto
       flex justify-between items-center flex-wrap`}
       >
-        <h2 className={`${styles.brandName} mr-2`}>Folklore</h2>
+        <a href="/">
+          <h2 className={`${styles.brandName} mr-2`}>Folklore</h2>
+        </a>
         <div
           className="flex flex-row flex-1 grow shrink md:order-none
           order-last"
@@ -51,12 +53,12 @@ const NavBar = () => {
           >
             <li><SinginButton /></li>
             <li><FavoritesButton /></li>
-            <li><CarButton /></li>
+            <li><CartButton /></li>
           </ul>
         </nav>
       </div>
       <CategoriesNav />
-      <div className="shadow-md py-0.5" />
+      <div className="shadow-lg py-0.5 bg-[rgba(237,237,237,0.48)]" />
     </header>
   );
 };

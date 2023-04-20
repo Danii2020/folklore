@@ -5,7 +5,7 @@ const CategoriesNav = () => (
   <nav
     role="navigation"
     className={`${styles.xPaddings} max-w-[1400px] m-auto py-3
-  md:block hidden`}
+    md:block hidden`}
   >
     <ul className="flex justify-between items-center w-full">
       {navCategories.map((category) => (

@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 
-const CarButton = () => (
+const CartButton = () => (
   <button
     className="ml-3 rounded-full hover:bg-[rgba(96,165,250,0.25)] md:p-4 p-2"
     type="button"
@@ -17,4 +17,4 @@ const CarButton = () => (
 
 );
 
-export default CarButton;
+export default CartButton;

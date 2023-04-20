@@ -17,7 +17,7 @@ const styles = {
   brandName:
   'font-semibold lg:text-[40px] md:text-[30px] sm:text-[15px] text-[30px] text-black',
   heroHeading:
-    'lg:text-[30px] md:text-[30px] sm:text-[20px] text-[30px] text-black',
+    'lg:text-[30px] md:text-[30px] sm:text-[22px] text-[25px] text-black',
   heroSubtitle:
     'font-light lg:text-[44px] md:text-[44px] sm:text-[34px] text-[40px] text-black',
   heroSubSubtitle:
@@ -25,9 +25,15 @@ const styles = {
   subTitle:
     'lg:text-[20px] md:text-[20px] sm:text-[15px] text-[20px] text-black',
   paragraph:
-    'font-normal lg:text-[16px] md:text-[16px] sm:text-[16px] text-[16px] text-black',
+    'lg:text-[16px] md:text-[16px] sm:text-[16px] text-[16px] text-black',
+  smallText:
+    'lg:text-[14px] md:text-[14px] sm:text-[14px] text-[14px] text-black',
   footerText:
     'font-light lg:text-[20px] md:text-[20px] sm:text-[20px] text-[20px] text-black',
+  detailsText:
+    'font-medium lg:text-[20px] md:text-[20px] sm:text-[20px] text-[20px] text-black',
+  subText:
+    'font-normal lg:text-[26px] md:text-[26px] sm:text-[26px] text-[26px] text-black',
 };
 
 export default styles;

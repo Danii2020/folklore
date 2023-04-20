@@ -1,8 +1,8 @@
 /* eslint-disable import/no-unresolved */
 
 import Image from 'next/image';
-import styles from '../../styles';
-import { socials } from '../../constants';
+import styles from '../styles';
+import { socials } from '../constants';
 
 const Footer = () => (
   <footer
