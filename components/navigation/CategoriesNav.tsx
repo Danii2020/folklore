@@ -13,7 +13,7 @@ const CategoriesNav = () => (
           <a
             className="font-normal md:text-[16px] text-[20px]
             hover:border-b border-black"
-            href={category.href}
+            href={`/categorias${category.href}`}
           >
             {category.title}
           </a>
