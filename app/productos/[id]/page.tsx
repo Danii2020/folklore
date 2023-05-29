@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import {
   Carousel,
   ResponsiveCarousel,
@@ -7,21 +8,13 @@ import {
   ListingOtherProducts,
   ListingInterestProducts,
 } from '../../../sections/product/index';
+import { fetchProduct } from '../../../helpers/apis/helpers';
 
 interface ProductProps {
   params: {
     id: string
   }
 }
-
-const fetchProduct = async (id: string) => {
-  const res = await fetch(`http://192.168.100.16:3000/api/productos/${id}`, {
-    next: {
-      revalidate: 60,
-    },
-  });
-  return res.json();
-};
 
 const ProductPage = async ({ params }: ProductProps) => {
   const { id } = params;

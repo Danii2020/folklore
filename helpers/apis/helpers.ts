@@ -63,9 +63,19 @@ const getCategoryBySlug = (slug:string, categories:Category[]):Category | null =
   return null;
 };
 
+const fetchProduct = async (id: string) => {
+  const res = await fetch(`https://folklore-xi.vercel.app/api/productos/${id}`, {
+    next: {
+      revalidate: 60,
+    },
+  });
+  return res.json();
+};
+
 export {
   fetchCategory,
   fetchCategories,
   fetchProductsByCategory,
   getCategoryBySlug,
+  fetchProduct,
 };
