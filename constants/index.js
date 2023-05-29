@@ -298,6 +298,7 @@ export const categories = [
   },
   {
     id: '2',
+    imgUrl: 'https://i.etsystatic.com/7364016/c/3000/3000/0/0/il/59e470/2070796025/il_300x300.2070796025_pt42.jpg',
     title: 'Joyería',
     slug: 'joyeria',
     description: 'Obras de arte personalizadas y cuadros y láminas completamente originales para convertir tu hogar en una galería',
@@ -429,6 +430,7 @@ export const categories = [
                 type: 'reciclado',
               },
             ],
+            description: 'Obras de arte personalizadas y cuadros y láminas completamente originales para convertir tu hogar en una galería',
           },
         ],
         description: 'Obras de arte personalizadas y cuadros y láminas completamente originales para convertir tu hogar en una galería',
@@ -614,6 +616,7 @@ export const categories = [
   },
   {
     id: '3',
+    imgUrl: 'https://i.etsystatic.com/7645072/r/il/423db2/1661170573/il_340x270.1661170573_cln3.jpg',
     title: 'Ropa',
     slug: 'ropa',
     description: 'Obras de arte personalizadas y cuadros y láminas completamente originales para convertir tu hogar en una galería',
@@ -733,6 +736,7 @@ export const categories = [
   },
   {
     id: '4',
+    imgUrl: 'https://i.etsystatic.com/18395709/r/il/2e01b7/2181116825/il_340x270.2181116825_ioc1.jpg',
     title: 'Hogar',
     slug: 'hogar',
     description: 'Obras de arte personalizadas y cuadros y láminas completamente originales para convertir tu hogar en una galería',
@@ -852,6 +856,7 @@ export const categories = [
   },
   {
     id: '5',
+    imgUrl: 'https://i.etsystatic.com/18395709/r/il/2e01b7/2181116825/il_340x270.2181116825_ioc1.jpg',
     title: 'Regalos',
     slug: 'regalos',
     description: 'Obras de arte personalizadas y cuadros y láminas completamente originales para convertir tu hogar en una galería',
@@ -971,6 +976,7 @@ export const categories = [
   },
   {
     id: '6',
+    imgUrl: 'https://i.etsystatic.com/18395709/r/il/2e01b7/2181116825/il_340x270.2181116825_ioc1.jpg',
     title: 'Juguetes',
     slug: 'juguetes',
     description: 'Obras de arte personalizadas y cuadros y láminas completamente originales para convertir tu hogar en una galería',
@@ -1161,6 +1167,7 @@ export const categories = [
             sellerName: 'guccicraft',
             stars: 4,
             numberOfReviews: 20,
+            type: 'amano',
           },
           {
             id: '2',
@@ -1170,6 +1177,7 @@ export const categories = [
             sellerName: 'guccicraft',
             stars: 4,
             numberOfReviews: 20,
+            type: 'amano',
           },
           {
             id: '3',
@@ -1179,6 +1187,7 @@ export const categories = [
             sellerName: 'guccicraft',
             stars: 4,
             numberOfReviews: 20,
+            type: 'reciclado',
           },
           {
             id: '4',
@@ -1188,6 +1197,7 @@ export const categories = [
             sellerName: 'guccicraft',
             stars: 4,
             numberOfReviews: 20,
+            type: 'reciclado',
           },
           {
             id: '5',
@@ -1197,6 +1207,7 @@ export const categories = [
             sellerName: 'guccicraft',
             stars: 4,
             numberOfReviews: 20,
+            type: 'reciclado',
           },
         ],
         description: 'Obras de arte personalizadas y cuadros y láminas completamente originales para convertir tu hogar en una galería',
@@ -1205,6 +1216,7 @@ export const categories = [
   },
   {
     id: '7',
+    imgUrl: 'https://i.etsystatic.com/18395709/r/il/2e01b7/2181116825/il_340x270.2181116825_ioc1.jpg',
     title: 'Manualidades',
     slug: 'manualidades',
     description: 'Obras de arte personalizadas y cuadros y láminas completamente originales para convertir tu hogar en una galería',

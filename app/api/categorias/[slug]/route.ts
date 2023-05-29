@@ -11,17 +11,8 @@ type Category = {
   title: string;
   description: string;
   slug: string;
-  subCategories?: Category[];
-}
-
-type Product = {
-  id: string;
   imgUrl: string;
-  price: number;
-  briefDescription: string;
-  sellerName: string;
-  stars: number;
-  numberOfReviews: number;
+  subCategories?: Category[];
 }
 
 type Props = {
