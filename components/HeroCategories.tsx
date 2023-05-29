@@ -14,7 +14,7 @@ const HeroCategories = () => (
         >
           <a
             className="max-w-fit z-0"
-            href={category.href}
+            href={`/categorias/${category.slug}`}
           >
             <div
               className="flex py-2 justify-center items-center

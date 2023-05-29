@@ -1,5 +1,4 @@
 /* eslint-disable no-shadow */
-import { products } from '../../constants';
 import { StarsRatingElement } from '../../components/elements/index';
 import { TabsContainer } from '../../components/containers/index';
 import { InLineCarousel } from './index';
@@ -23,14 +22,10 @@ type Product = {
 }
 
 type Props = {
-  id: string,
+  product: Product,
 }
 
-const ListingReviews = ({ id }: Props) => {
-  const product: Product | undefined = products.find(
-    (product) => product.id === id,
-  );
-
+const ListingReviews = ({ product }: Props) => {
   const productReviews = product?.productReviews;
   const sellerReviews = product?.sellerReviews;
 

@@ -28,6 +28,8 @@ const styles = {
     'lg:text-[16px] md:text-[16px] sm:text-[16px] text-[16px] text-black',
   smallText:
     'lg:text-[14px] md:text-[14px] sm:text-[14px] text-[14px] text-black',
+  labelText:
+    'lg:text-[12px] md:text-[12px] sm:text-[12px] text-[12px] text-black',
   footerText:
     'font-light lg:text-[20px] md:text-[20px] sm:text-[20px] text-[20px] text-black',
   detailsText:

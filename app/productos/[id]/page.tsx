@@ -14,8 +14,18 @@ interface ProductProps {
   }
 }
 
-const ProductPage = ({ params }: ProductProps) => {
+const fetchProduct = async (id: string) => {
+  const res = await fetch(`http://192.168.100.16:3000/api/productos/${id}`, {
+    next: {
+      revalidate: 60,
+    },
+  });
+  return res.json();
+};
+
+const ProductPage = async ({ params }: ProductProps) => {
   const { id } = params;
+  const product = await fetchProduct(id);
 
   return (
     <div
@@ -25,16 +35,16 @@ const ProductPage = ({ params }: ProductProps) => {
         className="lg:block max-w-[1400px]
         my-0 mx-auto mt-6"
       >
-        <Carousel id={id} />
-        <ResponsiveCarousel id={id} />
+        <Carousel product={product} />
+        <ResponsiveCarousel product={product} />
         <div
           className="mx-3"
         >
-          <ListingProduct id={id} />
-          <ListingInfoProduct id={id} />
-          <ListingReviews id={id} />
-          <ListingOtherProducts id={id} />
-          <ListingInterestProducts id={id} />
+          <ListingProduct product={product} />
+          <ListingInfoProduct product={product} />
+          <ListingReviews product={product} />
+          <ListingOtherProducts product={product} />
+          <ListingInterestProducts product={product} />
         </div>
       </div>
     </div>

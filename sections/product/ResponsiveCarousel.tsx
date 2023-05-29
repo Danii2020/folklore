@@ -7,7 +7,6 @@
 import React, { useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import Image from 'next/image';
-import { products } from '../../constants';
 
 type typeImage = {
   imgUrl: string,
@@ -20,13 +19,10 @@ type Product = {
 }
 
 interface CarouselProps {
-  id: string;
+  product: Product;
 }
 
-const ResponsiveCarousel = ({ id }: CarouselProps) => {
-  const product: Product | undefined = products.find(
-    (product) => product.id === id,
-  );
+const ResponsiveCarousel = ({ product }: CarouselProps) => {
   const images = product?.images || [];
 
   const [activeIndex, setActiveIndex] = useState(0);

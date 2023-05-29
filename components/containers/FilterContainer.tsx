@@ -31,7 +31,7 @@ type Props = {
 const priceOptions = [
   { text: 'Cualquier precio', filter_value: '_' },
   { text: 'Menos de 25 USD', filter_value: '_25' },
-  { text: 'USD 25 a USD 50', filter_value: '50_200' },
+  { text: 'USD 25 a USD 50', filter_value: '25_50' },
   { text: 'USD 50 a USD 100', filter_value: '50_100' },
   { text: 'Más de USD 100', filter_value: '100_' },
   { text: 'Personalizado', filter_value: 'custom' },

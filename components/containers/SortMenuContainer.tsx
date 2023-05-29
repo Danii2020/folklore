@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-shadow */
 
@@ -5,6 +6,7 @@
 
 import { useState } from 'react';
 import styles from '../../styles';
+import { buildSortByUrl } from '../../helpers/urls/helpers';
 
 type MenuOption = {
   option: string;
@@ -12,11 +14,12 @@ type MenuOption = {
 }
 type Props = {
   menuOptions: MenuOption[];
+  selectedMenuOption: MenuOption;
 }
 
-const SortMenuContainer = ({ menuOptions }: Props) => {
+const SortMenuContainer = ({ menuOptions, selectedMenuOption }: Props) => {
   const [selectedOption, setSelectedOption] = useState<string>(
-    menuOptions[0].slug,
+    selectedMenuOption.slug,
   );
 
   return (
@@ -37,7 +40,7 @@ const SortMenuContainer = ({ menuOptions }: Props) => {
             type="button"
             role="menuitemradio"
             aria-checked={selectedOption === option.slug}
-            href={`?sortBy=${option.slug}`}
+            href={buildSortByUrl(option.slug)}
             onClick={() => setSelectedOption(option.slug)}
             className={`${styles.smallText} hover:bg-[rgba(34,34,34,.05)]
                           text-left py-3 px-4 min-w-full w-max break-words

@@ -1,4 +1,4 @@
-import { navCategories } from '../../constants/index';
+import { categories } from '../../constants/index';
 import styles from '../../styles';
 
 const ResponsiveCategoriesNav = () => (
@@ -12,14 +12,14 @@ const ResponsiveCategoriesNav = () => (
       className="flex flex-col
     text-left"
     >
-      {navCategories.map((category) => (
+      {categories.map((category) => (
         <li
           className="py-1"
           key={category.id}
         >
           <a
             className="font-normal md:text-[16px] text-[20px]"
-            href={category.href}
+            href={`/categorias/${category.slug}`}
           >
             {category.title}
           </a>

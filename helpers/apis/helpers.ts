@@ -7,6 +7,7 @@ type Product = {
   sellerName: string;
   stars: number;
   numberOfReviews: number;
+  type: string;
 }
 
 type Category = {
@@ -20,7 +21,7 @@ type Category = {
 }
 
 const fetchCategory = async (slug: string):Promise<Category> => {
-  const res = await fetch(`http://192.168.100.16:3000/api/categorias/${slug}`, {
+  const res = await fetch(`https://folklore-xi.vercel.app/api/categorias/${slug}`, {
     next: {
       revalidate: 60,
     },
@@ -29,7 +30,7 @@ const fetchCategory = async (slug: string):Promise<Category> => {
 };
 
 const fetchCategories = async () => {
-  const res = await fetch('http://192.168.100.16:3000/api/categorias/', {
+  const res = await fetch('https://folklore-xi.vercel.app/api/categorias/', {
     next: {
       revalidate: 60,
     },
@@ -38,7 +39,7 @@ const fetchCategories = async () => {
 };
 
 const fetchProductsByCategory = async (slug:string):Promise<Product[]> => {
-  const res = await fetch(`http://192.168.100.16:3000/api/categorias/${slug}/productos`, {
+  const res = await fetch(`https://folklore-xi.vercel.app/api/categorias/${slug}/productos`, {
     next: {
       revalidate: 60,
     },

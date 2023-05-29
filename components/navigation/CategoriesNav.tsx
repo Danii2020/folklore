@@ -1,4 +1,4 @@
-import { navCategories } from '../../constants/index';
+import { categories } from '../../constants/index';
 import styles from '../../styles';
 
 const CategoriesNav = () => (
@@ -8,12 +8,12 @@ const CategoriesNav = () => (
     md:block hidden`}
   >
     <ul className="flex justify-between items-center w-full">
-      {navCategories.map((category) => (
+      {categories.map((category) => (
         <li key={category.id}>
           <a
             className="font-normal md:text-[16px] text-[20px]
             hover:border-b border-black"
-            href={`/categorias${category.href}`}
+            href={`/categorias/${category.slug}`}
           >
             {category.title}
           </a>

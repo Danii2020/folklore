@@ -1,3 +1,6 @@
+/* eslint-disable react/require-default-props */
+/* eslint-disable arrow-body-style */
+
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -24,10 +27,16 @@ type Category = {
   subCategories?: Category[];
 }
 
+type MenuOption = {
+  option: string;
+  slug: string;
+}
+
 interface Props {
   categories: Category[];
   category: Category;
   products: Product[];
+  selectedMenuOptionSlug?: string;
 }
 
 const sortOptions = [
@@ -38,7 +47,14 @@ const sortOptions = [
   { option: 'Más reciente', slug: 'date-desc' },
 ];
 
-const ListingCategoryProducts = ({ categories, products, category }: Props) => {
+const ListingCategoryProducts = (
+  {
+    categories,
+    products,
+    category,
+    selectedMenuOptionSlug = sortOptions[0].slug,
+  }: Props,
+) => {
   const [isFilterOpen, setIsFilterOpen] = useState<boolean>(false);
   const [isSortMenuOpen, setIsortMenuOpen] = useState<boolean>(false);
 
@@ -48,6 +64,11 @@ const ListingCategoryProducts = ({ categories, products, category }: Props) => {
 
   const handleSortMenuClick = () => {
     setIsortMenuOpen(!isSortMenuOpen);
+  };
+
+  const findOptionBySlug = (options: MenuOption[], slug: string): MenuOption| undefined => {
+    console.log(options.find((option) => option.slug === slug));
+    return options.find((option) => option.slug === slug);
   };
 
   useEffect(() => {
@@ -89,29 +110,42 @@ const ListingCategoryProducts = ({ categories, products, category }: Props) => {
               onClick={handleSortMenuClick}
               isSortMenuOpen={isSortMenuOpen}
               isFilterOpen={isFilterOpen}
+              selectedMenuOption={findOptionBySlug(sortOptions, selectedMenuOptionSlug)}
             />
             {isSortMenuOpen && !isFilterOpen && (
               <SortMenuContainer
+                selectedMenuOption={
+                  findOptionBySlug(sortOptions, selectedMenuOptionSlug) || sortOptions[0]
+                }
                 menuOptions={sortOptions}
               />
             )}
           </div>
         </div>
-        <div>
-          <ol className="flex flex-wrap -m-2 pl-0">
-            {
-                products.map((product) => (
-                  <li
-                    key={product.id}
-                    className="flex grow basis-[25%] md:max-w-[25%]
-                    max-w-[50%] p-2"
-                  >
-                    <CategoryProductContainer product={product} />
-                  </li>
-                ))
-              }
-          </ol>
-        </div>
+        {
+          products.length > 0 ? (
+            <div>
+              <ol className="flex flex-wrap -m-2 pl-0">
+                {
+                  products.map((product) => (
+                    <li
+                      key={product.id}
+                      className="flex grow basis-[25%] md:max-w-[25%]
+                      max-w-[50%] p-2"
+                    >
+                      <CategoryProductContainer product={product} />
+                    </li>
+                  ))
+                }
+              </ol>
+            </div>
+          )
+            : (
+              <div className="items-center justify-center">
+                No hay productos con ese filtro por el momento...
+              </div>
+            )
+        }
       </div>
     </div>
   );

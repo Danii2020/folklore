@@ -4,9 +4,9 @@ import TabsContainer from './TabsContainer';
 import ReviewsContainer from './ReviewsContainer';
 import OtherProductContainer from './OtherProductContainer';
 import FilterContainer from './FilterContainer';
+import CategoriesFilterContainer from './CategoriesFilterContainer';
 import SortMenuContainer from './SortMenuContainer';
 import CategoryProductContainer from './CategoryProductContainer';
-import CategoriesFilterContainer from './CategoriesFilterContainer';
 
 export {
   SellerContainer,
@@ -14,8 +14,8 @@ export {
   ReviewsContainer,
   OtherProductContainer,
   FilterContainer,
+  CategoriesFilterContainer,
   SortMenuContainer,
   CategoryProductContainer,
-  CategoriesFilterContainer,
 };
 

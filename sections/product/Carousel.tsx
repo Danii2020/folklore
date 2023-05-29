@@ -4,7 +4,6 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { products } from '../../constants';
 import styles from '../../styles';
 
 type typeImage = {
@@ -18,13 +17,10 @@ type Product = {
 }
 
 interface Props {
-  id: string;
+  product: Product;
 }
 
-const Carousel = ({ id }: Props) => {
-  const product: Product | undefined = products.find(
-    (product) => product.id === id,
-  );
+const Carousel = ({ product }: Props) => {
   const images = product?.images || [];
 
   const [selectedImage, setSelectedImage] = useState<typeImage>(images[0]);

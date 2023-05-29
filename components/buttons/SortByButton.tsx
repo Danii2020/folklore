@@ -1,13 +1,19 @@
 import { MouseEventHandler } from 'react';
 import styles from '../../styles';
 
+type MenuOption = {
+  option: string;
+  slug: string;
+}
+
 type Props = {
   onClick: MouseEventHandler<HTMLButtonElement>;
   isSortMenuOpen: boolean;
   isFilterOpen: boolean;
+  selectedMenuOption: MenuOption | undefined;
 }
 
-const SortByButton = ({ onClick, isSortMenuOpen, isFilterOpen }: Props) => (
+const SortByButton = ({ onClick, isSortMenuOpen, isFilterOpen, selectedMenuOption }: Props) => (
   <button
     type="button"
     className={`flex flex-row rounded-full justify-center items-center
@@ -22,7 +28,7 @@ const SortByButton = ({ onClick, isSortMenuOpen, isFilterOpen }: Props) => (
       Ordenar por:
     </span>
     <span className={`${styles.smallText} font-medium`}>
-      Relevancia
+      {selectedMenuOption?.option}
     </span>
     <span
       className="w-[18px] h-[18px]"

@@ -76,6 +76,7 @@ const HeaderBar = ({ querySlug, category }: Props) => {
                   {
                     subCategories.map((subCategory) => (
                       <div
+                        key={subCategory.id}
                         className="py-1 break-words text-center px-2
                       md:w-[50%] w-[30%]"
                       >
