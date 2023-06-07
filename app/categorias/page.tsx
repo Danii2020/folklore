@@ -73,6 +73,7 @@ const CategoriesPage = async ({ searchParams }: CategoryProps) => {
       products.sort((a, b) => b.stars - a.stars);
     }
   }
+  console.log('Testing!');
 
   return (
     <div className="bg-[#FFFFFF]">
