@@ -17,7 +17,7 @@ type Category = {
 type Props = {
   visibility: string;
   categories: Category[] | null;
-  onSelectedCategoryChange: (category: {slug:string, title:string}[] | null) => void;
+  onSelectedCategoryChange: (category: {slug:string, title:string}[] | undefined) => void;
 };
 
 const CategoriesFilterContainer = ({ categories, visibility, onSelectedCategoryChange }: Props) => {
@@ -46,7 +46,7 @@ const CategoriesFilterContainer = ({ categories, visibility, onSelectedCategoryC
 
   const handleAllCategoriesClick = () => {
     setSelectedCategories([]);
-    onSelectedCategoryChange(null);
+    onSelectedCategoryChange(undefined);
   };
 
   useEffect(() => {

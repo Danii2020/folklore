@@ -67,7 +67,6 @@ const ListingCategoryProducts = (
   };
 
   const findOptionBySlug = (options: MenuOption[], slug: string): MenuOption| undefined => {
-    console.log(options.find((option) => option.slug === slug));
     return options.find((option) => option.slug === slug);
   };
 

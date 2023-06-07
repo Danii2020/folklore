@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 /* eslint-disable import/no-unresolved */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-shadow */
@@ -24,7 +25,7 @@ type Option = {
 
 type Props = {
   categories: Category[] | null;
-  category: Category[] | null;
+  category: Category[] | undefined;
   onHandleClose: () => void;
 }
 
@@ -45,12 +46,12 @@ const productTypeOptions = [
 
 const FilterContainer = ({ categories, onHandleClose, category }: Props) => {
   const [categoriesIsVisible, setCategoriesIsVisible] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState<{slug:string, title:string}[] | null>(category);
+  const [selectedCategory, setSelectedCategory] = useState<{slug:string, title:string}[] | undefined>(category);
   const [selectedPrice, setSelectedPrice] = useState<Option | null>(null);
   const [selectedArticle, setSelectedArticle] = useState<Option | null>(null);
   const [selectedPersonalizedPrice, setSelectedPersonalizedPrice] = useState<string | null>(null);
 
-  const handleSelectedCategoryChange = (selectedCategory: {slug:string, title:string}[] | null) => {
+  const handleSelectedCategoryChange = (selectedCategory: {slug:string, title:string}[] | undefined) => {
     setSelectedCategory(selectedCategory);
   };
 

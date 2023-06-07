@@ -27,14 +27,14 @@ const formatPriceQueryParam = (price?: string): string => {
   return queryParams;
 };
 
-const buildCategoriesPath = (selectedCategories: Category[] | null) => {
+const buildCategoriesPath = (selectedCategories: Category[] | undefined) => {
   const slugs = selectedCategories?.map((category) => category.slug);
   const path = slugs?.join('/');
   return `/${path}`;
 };
 
 const buildFilterURL = (
-  selectedCategories: Category[] | null,
+  selectedCategories: Category[] | undefined,
   selectedPrice: Option | null,
   selectedArticle: Option | null,
   selectedPersonalizedPrice: string | null,
@@ -63,10 +63,13 @@ const buildFilterURL = (
 
   const queryString = queryParams.join('&');
   const categoriesPath = buildCategoriesPath(selectedCategories);
+  const windowPath = window.location.pathname;
   if (existingSortQueryParam) {
-    return `/categorias${categoriesPath}${queryString ? `?${queryString}&${existingSortQueryParam}` : `${existingSortQueryParam}`}`;
+    return `${windowPath === '/categorias'
+      ? '' : '/categorias'}${queryString ? `?${queryString}&${existingSortQueryParam}` : `${existingSortQueryParam}`}`;
   }
-  const url = `/categorias${categoriesPath}${queryString ? `?${queryString}` : ''}`;
+  const url = `${windowPath === '/categorias'
+    ? '' : '/categorias'}${categoriesPath}${queryString ? `?${queryString}` : ''}`;
 
   return url;
 };

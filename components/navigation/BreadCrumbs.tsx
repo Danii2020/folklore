@@ -16,11 +16,11 @@ const BreadCrumbs = ({ root, querySlug }: Props) => (
           <span
             className="hover:border-b border-black"
           >
-            {capitalizeFirstLetter(root)}
+            Todos
           </span>
         </a>
       </li>
-      {querySlug.map((segment, index) => (
+      {querySlug.length >= 1 && querySlug.map((segment, index) => (
         <li key={index} className="flex flex-row items-center justify-center">
           <span
             className="mx-1 w-[18px] h-[18px]

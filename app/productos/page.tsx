@@ -1,5 +1,7 @@
+import { redirect } from 'next/navigation';
+
 const Page = () => (
-  null
+  redirect('/categorias')
 );
 
 export default Page;

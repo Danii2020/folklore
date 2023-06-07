@@ -47,6 +47,15 @@ const fetchProductsByCategory = async (slug:string):Promise<Product[]> => {
   return res.json();
 };
 
+const fetchProducts = async ():Promise<Product[]> => {
+  const res = await fetch('http://192.168.100.16:3000/api/productos', {
+    next: {
+      revalidate: 60,
+    },
+  });
+  return res.json();
+};
+
 const getCategoryBySlug = (slug:string, categories:Category[]):Category | null => {
   for (let i = 0; i < categories.length; i++) {
     const category = categories[i];
@@ -78,4 +87,5 @@ export {
   fetchProductsByCategory,
   getCategoryBySlug,
   fetchProduct,
+  fetchProducts,
 };
