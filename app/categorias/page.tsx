@@ -47,7 +47,6 @@ const CategoriesPage = async ({ searchParams }: CategoryProps) => {
 
   const categories = await fetchCategories();
   let products = getAllProducts(categories);
-  const numberOfProducts = products.length;
 
   if (articleType || minPrice || maxPrice) {
     products = products.filter((product) => {
@@ -73,7 +72,9 @@ const CategoriesPage = async ({ searchParams }: CategoryProps) => {
       products.sort((a, b) => b.stars - a.stars);
     }
   }
-  console.log('Testing!');
+  const numberOfProducts = products.length;
+  console.log(products)
+  console.log(products.length)
 
   return (
     <div className="bg-[#FFFFFF]">
