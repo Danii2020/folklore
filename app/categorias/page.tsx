@@ -73,8 +73,8 @@ const CategoriesPage = async ({ searchParams }: CategoryProps) => {
     }
   }
   const numberOfProducts = products.length;
-  console.log(products)
-  console.log(products.length)
+  console.log(products);
+  console.log(products.length);
 
   return (
     <div className="bg-[#FFFFFF]">
