@@ -7,6 +7,7 @@ import FilterContainer from './FilterContainer';
 import CategoriesFilterContainer from './CategoriesFilterContainer';
 import SortMenuContainer from './SortMenuContainer';
 import CategoryProductContainer from './CategoryProductContainer';
+import ListingProductsContainer from './ListingProductsContainer';
 
 export {
   SellerContainer,
@@ -17,5 +18,6 @@ export {
   CategoriesFilterContainer,
   SortMenuContainer,
   CategoryProductContainer,
+  ListingProductsContainer,
 };
 

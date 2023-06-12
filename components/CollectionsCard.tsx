@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { collections } from '../constants';
+import { people } from '../constants';
 
 const CollectionsCard = () => (
   <div
@@ -7,9 +7,9 @@ const CollectionsCard = () => (
       md:justify-between justify-center"
   >
     {
-      collections.map((collection) => (
+      people.map((person) => (
         <div
-          key={collection.id}
+          key={person.collections[0].id}
           className="flex flex-col md:w-[305px] md:h-[310px]
             rounded-[15px] border-[1px] border-[#BBB5B5]
             w-[305px] h-[310px] mb-3 z-0"
@@ -20,14 +20,14 @@ const CollectionsCard = () => (
           >
             <a
               className="font-semibold text-[18px]"
-              href={collection.href}
+              href={`/personas/${person.id}/favoritos/${person.collections[0].slug}`}
             >
-              {collection.name}
+              {person.collections[0].name}
             </a>
             <p
               className="text-[15px]"
             >
-              {`${collection.numProducts} artículos`}
+              {`${person.collections[0].products.length} artículos`}
             </p>
           </div>
           <div
@@ -38,7 +38,7 @@ const CollectionsCard = () => (
               <div
                 className="grow shrink"
               >
-                <a href={collection.images[0].href}>
+                <a href={`/productos/${person.collections[0].products[0].id}`}>
                   <div
                     className="relative z-10 m-0 h-[50%]"
                   >
@@ -48,13 +48,13 @@ const CollectionsCard = () => (
                       hover:scale-110 hover:shadow-lg"
                       width="500"
                       height="500"
-                      src={collection.images[0].imgUrl}
-                      alt={collection.name}
+                      src={person.collections[0].products[0].imgUrl}
+                      alt={person.collections[0].name}
                     />
                   </div>
                 </a>
                 <div className="py-1" />
-                <a href={collection.images[1].href}>
+                <a href={`/productos/${person.collections[0].products[1].id}`}>
                   <div
                     className="relative z-10 m-0 h-[50%]"
                   >
@@ -64,8 +64,8 @@ const CollectionsCard = () => (
                       transform hover:scale-110 hover:shadow-lg"
                       width="500"
                       height="500"
-                      src={collection.images[1].imgUrl}
-                      alt={collection.name}
+                      src={person.collections[0].products[1].imgUrl}
+                      alt={person.collections[0].name}
                     />
                   </div>
                 </a>
@@ -74,7 +74,7 @@ const CollectionsCard = () => (
               <div
                 className="grow shrink"
               >
-                <a href={collection.images[2].href}>
+                <a href={`/productos/${person.collections[0].products[2].id}`}>
                   <div
                     className="relative z-10 m-0 h-[50%]"
                   >
@@ -84,13 +84,13 @@ const CollectionsCard = () => (
                       hover:scale-110 hover:shadow-lg"
                       width="500"
                       height="500"
-                      src={collection.images[2].imgUrl}
-                      alt={collection.name}
+                      src={person.collections[0].products[2].imgUrl}
+                      alt={person.collections[0].name}
                     />
                   </div>
                 </a>
                 <div className="py-1" />
-                <a href={collection.images[3].href}>
+                <a href={`/productos/${person.collections[0].products[3].id}`}>
                   <div
                     className="relative z-10 m-0 h-[50%]"
                   >
@@ -100,8 +100,8 @@ const CollectionsCard = () => (
                       transform hover:scale-110 hover:shadow-lg"
                       width="500"
                       height="500"
-                      src={collection.images[3].imgUrl}
-                      alt={collection.name}
+                      src={person.collections[0].products[3].imgUrl}
+                      alt={person.collections[0].name}
                     />
                   </div>
                 </a>

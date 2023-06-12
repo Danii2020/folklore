@@ -20,6 +20,20 @@ type Category = {
   subCategories?: Category[];
 }
 
+type Collection = {
+  id: string;
+  slug: string;
+  name: string;
+  products: Product[];
+}
+
+type People = {
+  id: string;
+  username: string;
+  name: string;
+  collections: Collection[],
+}
+
 const fetchCategory = async (slug: string):Promise<Category> => {
   const res = await fetch(`https://folklore-xi.vercel.app/api/categorias/${slug}`, {
     next: {
@@ -47,8 +61,8 @@ const fetchProductsByCategory = async (slug:string):Promise<Product[]> => {
   return res.json();
 };
 
-const fetchProducts = async ():Promise<Product[]> => {
-  const res = await fetch('http://192.168.100.16:3000/api/productos', {
+const fetchPersonById = async (id:string):Promise<People> => {
+  const res = await fetch(`https://folklore-xi.vercel.app/api/personas/${id}`, {
     next: {
       revalidate: 60,
     },
@@ -87,5 +101,5 @@ export {
   fetchProductsByCategory,
   getCategoryBySlug,
   fetchProduct,
-  fetchProducts,
+  fetchPersonById,
 };

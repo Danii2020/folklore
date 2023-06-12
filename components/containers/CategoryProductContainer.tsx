@@ -23,8 +23,8 @@ const CategoryProductContainer = ({ product }: Props) => (
         className="w-[100%] inline-block"
         href={`/productos/${product.id}`}
       >
-        <Image
-          className="w-full rounded-md mb-2
+        <img
+          className="w-full max-h-[249px] rounded-md mb-2
         cursor-pointer transition duration-300
         ease-in-out hover:scale-90
         hover:shadow-lg"
@@ -32,6 +32,7 @@ const CategoryProductContainer = ({ product }: Props) => (
           alt={product.briefDescription}
           width="189"
           height="189"
+          loading="lazy"
         />
         <div className="flex flex-col py-1 whitespace-normal">
           <h3
