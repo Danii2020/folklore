@@ -5,7 +5,6 @@ type Collection = {
   id: string;
   slug: string;
   name: string;
-  numProducts: number,
   products: {
     id: string;
     imgUrl: string;
