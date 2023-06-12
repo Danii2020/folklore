@@ -24,6 +24,8 @@ type Category = {
   subCategories?: Category[];
 }
 
+export const dynamic = 'force-dynamic';
+
 const CategoriesPage = async ({ searchParams }: CategoryProps) => {
   const articleType = searchParams?.article_type;
   const maxPrice = searchParams?.max_price;
