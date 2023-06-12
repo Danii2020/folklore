@@ -49,6 +49,7 @@ const CategoriesPage = async ({ searchParams }: CategoryProps) => {
   let products = getAllProducts(categories);
 
   if (articleType || minPrice || maxPrice) {
+    console.log('INSIDE IF');
     products = products.filter((product) => {
       if (articleType && product.type !== articleType) {
         return false;
@@ -61,6 +62,7 @@ const CategoriesPage = async ({ searchParams }: CategoryProps) => {
       }
       return true;
     });
+    console.log(products.length);
   }
 
   if (sortBy) {
@@ -73,8 +75,6 @@ const CategoriesPage = async ({ searchParams }: CategoryProps) => {
     }
   }
   const numberOfProducts = products.length;
-  console.log(products);
-  console.log(products.length);
 
   return (
     <div className="bg-[#FFFFFF]">

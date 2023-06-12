@@ -49,11 +49,12 @@ const CategoryPage = async ({ params, searchParams }: CategoryProps) => {
       products.sort((a, b) => b.stars - a.stars);
     }
   }
+  const numberOfProducts = products.length;
 
   return (
     <div className="bg-[#FFFFFF]">
       <div className="w-full bg-[rgba(19,122,132,0.14)]">
-        <HeaderBar querySlug={slug} category={category} />
+        <HeaderBar querySlug={slug} category={category} numberOfProducts={numberOfProducts} />
       </div>
       <div className="w-full">
         <ListingCategoryProducts

@@ -26,9 +26,10 @@ type Category = {
 interface Props {
   querySlug: string[];
   category: Category;
+  numberOfProducts: number;
 }
 
-const HeaderBar = ({ querySlug, category }: Props) => {
+const HeaderBar = ({ querySlug, category, numberOfProducts }: Props) => {
   const subCategories: Category[] | undefined = category?.subCategories;
   return (
     <section
@@ -59,7 +60,7 @@ const HeaderBar = ({ querySlug, category }: Props) => {
             <span
               className={`${styles.smallText}`}
             >
-              {`(${category?.products.length} resultados)`}
+              {`(${numberOfProducts} resultados)`}
             </span>
           </div>
         </div>
