@@ -5,7 +5,6 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import styles from '../../styles';
 import { buildSortByUrl } from '../../helpers/urls/helpers';
 
@@ -36,7 +35,7 @@ const SortMenuContainer = ({ menuOptions, selectedMenuOption }: Props) => {
     >
       {
         menuOptions.map((option, index) => (
-          <Link
+          <a
             key={index}
             type="button"
             role="menuitemradio"
@@ -50,7 +49,7 @@ const SortMenuContainer = ({ menuOptions, selectedMenuOption }: Props) => {
               : 'bg-white'}`}
           >
             {option.option}
-          </Link>
+          </a>
         ))
       }
     </div>

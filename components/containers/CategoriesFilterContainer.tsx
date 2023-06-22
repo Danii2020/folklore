@@ -5,7 +5,6 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
 import styles from '../../styles';
 
 type Category = {
@@ -67,7 +66,7 @@ const CategoriesFilterContainer = ({ categories, visibility, onSelectedCategoryC
     <ul className="pl-6">
       {subCategories.map((subCategory) => (
         <li key={subCategory.id}>
-          <Link
+          <a
             className={`${styles.smallText} py-2 pl-3 border-b-[1px] border-[#f1f1f1]
             block ${selectedCategories.includes(subCategory) ? 'text-[#5d4a4a] font-bold' : 'text-black'}
             ${subCategory.subCategories ? 'underline' : 'no-underline'}`}
@@ -75,7 +74,7 @@ const CategoriesFilterContainer = ({ categories, visibility, onSelectedCategoryC
             onClick={() => handleCategoryClick(subCategory)}
           >
             {subCategory.title}
-          </Link>
+          </a>
           {selectedCategories.includes(subCategory) && subCategory.subCategories && (
             renderSubCategories(subCategory.subCategories)
           )}
@@ -86,14 +85,14 @@ const CategoriesFilterContainer = ({ categories, visibility, onSelectedCategoryC
 
   const renderCategory = (category: Category) => (
     <li key={category.id}>
-      <Link
+      <a
         className={`${styles.smallText} py-2 pl-3 border-b-[1px] border-[#f1f1f1]
         underline block ${selectedCategories.includes(category) ? 'text-[#5d4a4a] font-bold' : 'text-black'}`}
         href="#"
         onClick={() => handleCategoryClick(category)}
       >
         {category.title}
-      </Link>
+      </a>
       {selectedCategories.includes(category) && category.subCategories && (
         renderSubCategories(category.subCategories)
       )}
@@ -108,13 +107,13 @@ const CategoriesFilterContainer = ({ categories, visibility, onSelectedCategoryC
       <div>
         <ul>
           <li>
-            <Link
+            <a
               className={`${styles.smallText} py-2 pl-3 border-b-[1px] border-[#f1f1f1] block`}
               href="#"
               onClick={handleAllCategoriesClick}
             >
               Todas las categorias
-            </Link>
+            </a>
           </li>
           {categories?.map((category) => (
             <React.Fragment key={category.id}>{renderCategory(category)}</React.Fragment>
