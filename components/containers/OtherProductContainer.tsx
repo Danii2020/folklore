@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../../styles';
 
 type Product = {
@@ -15,7 +16,7 @@ type Props = {
 
 const OtherProductContainer = ({ product, username }: Props) => (
   <div className="flex md:max-w-[16.1%] max-w-[45%] md:py-2">
-    <a
+    <Link
       className="w-[100%] inline-block"
       href={`/productos/${product.id}`}
     >
@@ -47,7 +48,7 @@ const OtherProductContainer = ({ product, username }: Props) => (
           {`USD ${product.price}`}
         </p>
       </div>
-    </a>
+    </Link>
   </div>
 );
 

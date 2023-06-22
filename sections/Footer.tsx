@@ -1,6 +1,7 @@
 /* eslint-disable import/no-unresolved */
 
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles';
 import { socials } from '../constants';
 
@@ -23,31 +24,31 @@ const Footer = () => (
         items-center md:gap-20 gap-4"
       >
         <li key="terms-cons">
-          <a
+          <Link
             className={`${styles.footerText} text-center hover:border-b
             border-black`}
             href="/terminos-condiciones"
           >
             Términos y condiciones
-          </a>
+          </Link>
         </li>
         <li key="privacy">
-          <a
+          <Link
             className={`${styles.footerText} text-center hover:border-b
             border-black`}
             href="/privacidad"
           >
             Privacidad
-          </a>
+          </Link>
         </li>
         <li key="faqs">
-          <a
+          <Link
             className={`${styles.footerText} text-center hover:border-b
             border-black`}
             href="/preguntas-frecuentes"
           >
             Preguntas frecuentas
-          </a>
+          </Link>
         </li>
       </ul>
       <div
@@ -61,7 +62,7 @@ const Footer = () => (
               <li
                 key={social.name}
               >
-                <a
+                <Link
                   className="block rounded-full hover:bg-[rgba(96,165,250,0.25)]
                   md:p-2"
                   href={social.href}
@@ -75,7 +76,7 @@ const Footer = () => (
                       alt={social.name}
                     />
                   </span>
-                </a>
+                </Link>
               </li>
             ))
           }

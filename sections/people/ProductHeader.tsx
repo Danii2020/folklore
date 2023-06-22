@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../../styles';
 
 interface Props {
@@ -15,12 +16,12 @@ const ProductHeader = ({ collectionName, numberOfProducts, personName, personId 
       </h2>
       <p className={`${styles.smallText} text-[#525252] relative flex-grow`}>
         {`${numberOfProducts} artículos seleccionados por `}
-        <a
+        <Link
           className={`${styles.smallText} text-[#525252] underline`}
           href={`/personas/${personId}`}
         >
           {personName}
-        </a>
+        </Link>
       </p>
     </div>
   </div>

@@ -4,6 +4,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles';
 import { SinginButton, FavoritesButton, CartButton } from '../components/buttons/index';
 import { SearchBar, CategoriesNav, ResponsiveCategoriesNav } from '../components/navigation/index';
@@ -17,9 +18,9 @@ const NavBar = () => {
         className={`${styles.xPaddings} py-2 max-w-[1400px] w-[100%] m-auto
       flex justify-between items-center flex-wrap`}
       >
-        <a href="/">
+        <Link href="/">
           <h2 className={`${styles.brandName} mr-2`}>Folklore</h2>
-        </a>
+        </Link>
         <div
           className="flex flex-row flex-1 grow shrink md:order-none
           order-last"

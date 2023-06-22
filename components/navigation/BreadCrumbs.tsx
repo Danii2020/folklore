@@ -1,4 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import Link from 'next/link';
+
 type Props = {
   root: string;
   querySlug: string[];
@@ -12,13 +14,13 @@ const BreadCrumbs = ({ root, querySlug }: Props) => (
   <nav>
     <ol className="flex flex-row align-middle">
       <li className="flex flex-row">
-        <a href={`/${root}`}>
+        <Link href={`/${root}`}>
           <span
             className="hover:border-b border-black"
           >
             Todos
           </span>
-        </a>
+        </Link>
       </li>
       {querySlug.length >= 1 && querySlug.map((segment, index) => (
         <li key={index} className="flex flex-row items-center justify-center">
@@ -36,7 +38,7 @@ const BreadCrumbs = ({ root, querySlug }: Props) => (
               <path d="M10,17a1,1,0,0,1-.707-1.707L12.586,12,9.293,8.707a1,1,0,0,1,1.414-1.414L15.414,12l-4.707,4.707A1,1,0,0,1,10,17Z" />
             </svg>
           </span>
-          <a
+          <Link
             href={`/${root}/${querySlug.slice(0, index + 1).join('/')}`}
           >
             <span
@@ -44,7 +46,7 @@ const BreadCrumbs = ({ root, querySlug }: Props) => (
             >
               {capitalizeFirstLetter(segment)}
             </span>
-          </a>
+          </Link>
         </li>
       ))}
     </ol>

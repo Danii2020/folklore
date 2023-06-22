@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../../styles';
 import { StarsRatingElement } from '../elements';
 
@@ -18,7 +19,7 @@ type Props = {
 const CategoryProductContainer = ({ product }: Props) => (
   <div className="h-full max-w-[100%]">
     <div className="mr-0">
-      <a
+      <Link
         className="w-[100%] inline-block"
         href={`/productos/${product.id}`}
       >
@@ -67,7 +68,7 @@ const CategoryProductContainer = ({ product }: Props) => (
             {`USD ${product.price}`}
           </p>
         </div>
-      </a>
+      </Link>
     </div>
   </div>
 );

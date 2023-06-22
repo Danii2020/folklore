@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { StarsRatingElement } from '../elements/index';
 import styles from '../../styles';
 
@@ -39,13 +40,13 @@ const ReviewsContainer = ({ reviewType }:Props) => (
         src={reviewType.userImgUrl || ''}
         alt={reviewType.userName || 'Foto del usuario'}
       />
-      <a
+      <Link
         className={`${styles.smallText} text-[#767676]
         border-b border-[#767676]`}
         href={`/usuarios/perfil/${reviewType.userName}`}
       >
         {reviewType.userName}
-      </a>
+      </Link>
       <small className="px-1">&bull;</small>
       <p
         className={`${styles.smallText} text-[#767676]`}

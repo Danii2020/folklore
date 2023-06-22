@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { categories } from '../../constants/index';
 import styles from '../../styles';
 
@@ -17,12 +18,12 @@ const ResponsiveCategoriesNav = () => (
           className="py-1"
           key={category.id}
         >
-          <a
+          <Link
             className="font-normal md:text-[16px] text-[20px]"
             href={`/categorias/${category.slug}`}
           >
             {category.title}
-          </a>
+          </Link>
         </li>
       ))}
     </ul>

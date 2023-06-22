@@ -1,6 +1,7 @@
 /* eslint-disable no-shadow */
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { StarsRatingElement, SelectorElement } from '../../components/elements/index';
 import { AddToCartButton } from '../../components/buttons/index';
 import styles from '../../styles';
@@ -49,12 +50,12 @@ const ListingProduct = ({ product }: Props) => (
         <p
           className={`${styles.paragraph}`}
         >
-          <a
+          <Link
             className="hover:border-b border-black"
             href={`/sellers/${product?.sellerName}`}
           >
             {product?.sellerName}
-          </a>
+          </Link>
         </p>
         <small className="px-1">&bull;</small>
         <button
@@ -84,14 +85,14 @@ const ListingProduct = ({ product }: Props) => (
         >
           {`${product?.sales} ventas | `}
         </p>
-        <a
+        <Link
           aria-label="Califica este producto"
           href="#resenas"
         >
           <StarsRatingElement
             numberOfStars={product?.stars}
           />
-        </a>
+        </Link>
       </div>
       <div
         className="flex flex-col w-[100%] mt-4"

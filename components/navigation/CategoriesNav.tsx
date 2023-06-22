@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { categories } from '../../constants/index';
 import styles from '../../styles';
 
@@ -10,13 +11,13 @@ const CategoriesNav = () => (
     <ul className="flex justify-between items-center w-full">
       {categories.map((category) => (
         <li key={category.id}>
-          <a
+          <Link
             className="font-normal md:text-[16px] text-[20px]
             hover:border-b border-black"
             href={`/categorias/${category.slug}`}
           >
             {category.title}
-          </a>
+          </Link>
         </li>
       ))}
     </ul>

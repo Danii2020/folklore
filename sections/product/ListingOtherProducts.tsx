@@ -1,5 +1,6 @@
 /* eslint-disable no-shadow */
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../../styles';
 import { OtherProductsInLineCarousel } from './index';
 
@@ -58,7 +59,7 @@ const ListingOtherProducts = ({ product }: Props) => (
               </p>
             </button>
           </div>
-          <a href={`/sellers/${product?.sellerName}`}>
+          <Link href={`/sellers/${product?.sellerName}`}>
             <button
               type="button"
               className="flex flex-row justify-center gap-1
@@ -67,7 +68,7 @@ const ListingOtherProducts = ({ product }: Props) => (
             >
               Ver más
             </button>
-          </a>
+          </Link>
         </div>
         <OtherProductsInLineCarousel
           products={product?.otherProducts}

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../../styles';
 
 type Props = {
@@ -21,13 +22,13 @@ const SellerContainer = ({ sellerImgUrl, sellerName }: Props) => (
         src={sellerImgUrl || ''}
         alt={sellerName || 'Foto del vendedor'}
       />
-      <a
+      <Link
         className={`${styles.subTitle} font-light hover:border-b
         border-black`}
         href={`/sellers/${sellerName}`}
       >
         {sellerName}
-      </a>
+      </Link>
     </div>
     <button
       type="button"

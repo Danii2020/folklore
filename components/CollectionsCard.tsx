@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { people } from '../constants';
 
 const CollectionsCard = () => (
@@ -18,12 +19,12 @@ const CollectionsCard = () => (
             className="flex flex-row items-center w-full
               h-[44px] justify-between pt-2 pb-3 px-5"
           >
-            <a
+            <Link
               className="font-semibold text-[18px]"
               href={`/personas/${person.id}/favoritos/${person.collections[0].slug}`}
             >
               {person.collections[0].name}
-            </a>
+            </Link>
             <p
               className="text-[15px]"
             >
@@ -38,7 +39,7 @@ const CollectionsCard = () => (
               <div
                 className="grow shrink"
               >
-                <a href={`/productos/${person.collections[0].products[0].id}`}>
+                <Link href={`/productos/${person.collections[0].products[0].id}`}>
                   <div
                     className="relative z-10 m-0 h-[50%]"
                   >
@@ -52,9 +53,9 @@ const CollectionsCard = () => (
                       alt={person.collections[0].name}
                     />
                   </div>
-                </a>
+                </Link>
                 <div className="py-1" />
-                <a href={`/productos/${person.collections[0].products[1].id}`}>
+                <Link href={`/productos/${person.collections[0].products[1].id}`}>
                   <div
                     className="relative z-10 m-0 h-[50%]"
                   >
@@ -68,13 +69,13 @@ const CollectionsCard = () => (
                       alt={person.collections[0].name}
                     />
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="px-1" />
               <div
                 className="grow shrink"
               >
-                <a href={`/productos/${person.collections[0].products[2].id}`}>
+                <Link href={`/productos/${person.collections[0].products[2].id}`}>
                   <div
                     className="relative z-10 m-0 h-[50%]"
                   >
@@ -88,9 +89,9 @@ const CollectionsCard = () => (
                       alt={person.collections[0].name}
                     />
                   </div>
-                </a>
+                </Link>
                 <div className="py-1" />
-                <a href={`/productos/${person.collections[0].products[3].id}`}>
+                <Link href={`/productos/${person.collections[0].products[3].id}`}>
                   <div
                     className="relative z-10 m-0 h-[50%]"
                   >
@@ -104,7 +105,7 @@ const CollectionsCard = () => (
                       alt={person.collections[0].name}
                     />
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

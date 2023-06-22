@@ -1,5 +1,6 @@
 /* eslint-disable import/no-unresolved */
 
+import Link from 'next/link';
 import styles from '../../styles';
 
 const About = () => (
@@ -79,7 +80,7 @@ const About = () => (
         >
           ¿Alguna pregunta?
         </h4>
-        <a
+        <Link
           className="items-center rounded-full border-[2.5px]
           border-[#373434] p-3 font-normal text-[16px]
           transition duration-300 ease-in-out
@@ -87,7 +88,7 @@ const About = () => (
           href="/ayuda"
         >
           Ir al centro de ayuda
-        </a>
+        </Link>
       </div>
     </div>
   </section>

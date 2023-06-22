@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { recentlyViewedProducts } from '../constants/index';
 
 const RecentlyViewedContainer = () => (
@@ -16,7 +17,7 @@ const RecentlyViewedContainer = () => (
             ease-in-out transform hover:scale-110
             hover:shadow-lg"
           >
-            <a
+            <Link
               href={product.href}
             >
               <img
@@ -39,7 +40,7 @@ const RecentlyViewedContainer = () => (
                   {`USD ${product.price}`}
                 </p>
               </div>
-            </a>
+            </Link>
           </div>
         </li>
       ))

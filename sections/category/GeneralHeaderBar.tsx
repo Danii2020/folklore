@@ -1,6 +1,7 @@
 /* eslint-disable import/named */
 /* eslint-disable no-shadow */
 
+import Link from 'next/link';
 import { BreadCrumbs } from '../../components/navigation/index';
 import styles from '../../styles';
 
@@ -73,7 +74,7 @@ const GeneralHeaderBar = ({ querySlug, categories, numberOfProducts }: Props) =>
                     key={category.id}
                     className="flex flex-col items-center justify-start w-28"
                   >
-                    <a
+                    <Link
                       href={`/categorias/${querySlug.join('/')}${category.slug}`}
                     >
                       <img
@@ -86,7 +87,7 @@ const GeneralHeaderBar = ({ querySlug, categories, numberOfProducts }: Props) =>
                       <div className="justify-center items-center">
                         <p className="text-center pt-1">{category.title}</p>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 ))}
               </div>

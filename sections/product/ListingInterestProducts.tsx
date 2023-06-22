@@ -1,4 +1,5 @@
 /* eslint-disable no-shadow */
+import Link from 'next/link';
 import { OtherProductContainer } from '../../components/containers/index';
 import styles from '../../styles';
 
@@ -40,7 +41,7 @@ const ListingInterestProducts = ({ product }: Props) => (
 
             </h2>
           </div>
-          <a href={`/productos/${product?.id}/similares/`}>
+          <Link href={`/productos/${product?.id}/similares/`}>
             <button
               type="button"
               className="flex flex-row justify-center gap-1
@@ -49,7 +50,7 @@ const ListingInterestProducts = ({ product }: Props) => (
             >
               Ver más
             </button>
-          </a>
+          </Link>
         </div>
         <div className="relative mt-3">
           <div className="md:overflow-hidden relative">

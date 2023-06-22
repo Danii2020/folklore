@@ -1,6 +1,7 @@
 /* eslint-disable import/named */
 /* eslint-disable no-shadow */
 
+import Link from 'next/link';
 import { BreadCrumbs } from '../../components/navigation/index';
 import styles from '../../styles';
 
@@ -81,7 +82,7 @@ const HeaderBar = ({ querySlug, category, numberOfProducts }: Props) => {
                         className="py-1 break-words text-center px-2
                       md:w-[50%] w-[30%]"
                       >
-                        <a
+                        <Link
                           key={category?.id}
                           href={`/categorias/${querySlug.join('/')}/${subCategory.slug}`}
                         >
@@ -99,7 +100,7 @@ const HeaderBar = ({ querySlug, category, numberOfProducts }: Props) => {
                           >
                             {subCategory.title}
                           </p>
-                        </a>
+                        </Link>
                       </div>
                     ))
                   }

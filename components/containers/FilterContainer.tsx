@@ -6,6 +6,7 @@
 'use client';
 
 import { useEffect, useState, FormEvent } from 'react';
+import Link from 'next/link';
 import styles from '../../styles';
 import { FilterCheckboxGroup } from '../checkboxes/index';
 import { CategoriesFilterContainer } from './index';
@@ -231,14 +232,14 @@ const FilterContainer = ({ categories, onHandleClose, category }: Props) => {
                 ? 'block'
                 : 'hidden'}`}
             >
-              <a
+              <Link
                 className={`${styles.subTitle} inline-block relative font-bold
                 transition-opacity duration-200 ease-out z-0 back-button`}
                 href="#"
                 onClick={() => setCategoriesIsVisible(false)}
               >
                 Atrás
-              </a>
+              </Link>
             </div>
             <button
               type="submit"

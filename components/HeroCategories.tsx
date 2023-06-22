@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { heroCategories } from '../constants';
 
 const HeroCategories = () => (
@@ -12,7 +13,7 @@ const HeroCategories = () => (
           className="px-1 max-w-[114px]"
           key={category.id}
         >
-          <a
+          <Link
             className="max-w-fit z-0"
             href={`/categorias/${category.slug}`}
           >
@@ -37,7 +38,7 @@ const HeroCategories = () => (
                 {category.title}
               </p>
             </div>
-          </a>
+          </Link>
         </li>
       ))
     }
