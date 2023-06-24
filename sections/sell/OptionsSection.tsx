@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import styles from '../../styles';
 
 const OptionsSection = () => (
@@ -43,12 +42,12 @@ const OptionsSection = () => (
             Publica artículos gratuitamente y solo paga 0.20 USD por cada transacción cuanto tu articulo se venda.
           </p>
           <p className="mb-1">
-            <Link
+            <a
               className={`${styles.paragraph} underline`}
               href="#fees"
             >
               Más información
-            </Link>
+            </a>
           </p>
         </div>
         <div
@@ -70,12 +69,12 @@ const OptionsSection = () => (
             Nuestras herramientas te permiten administrar y promocionar tu negocio fácilmente.
           </p>
           <p className="mb-1">
-            <Link
+            <a
               className={`${styles.paragraph} underline`}
               href="#tools"
             >
               Más información
-            </Link>
+            </a>
           </p>
         </div>
         <div
@@ -97,12 +96,12 @@ const OptionsSection = () => (
             Conecta con el equipo de Folklore siempre que necesites ayuda sobre la plataforma y como administrar tu negocio.
           </p>
           <p className="mb-1">
-            <Link
+            <a
               className={`${styles.paragraph} underline`}
               href="#support"
             >
               Más información
-            </Link>
+            </a>
           </p>
         </div>
       </div>
@@ -123,14 +122,14 @@ const OptionsSection = () => (
           <h4 className={`${styles.subTitle} font-medium mb-4 mt-3 text-[#484848]`}>
             Empieza a vender hoy mismo
           </h4>
-          <Link
+          <a
             className={`${styles.subTitle} font-medium text-white rounded-full z-0
             md:px-5 px-4 py-2 text-center bg-black transition duration-300 ease-in-out transform
             hover:scale-105 hover:shadow-lg`}
             href="/tu/tienda/crear"
           >
             Abre tu tienda en Folklore
-          </Link>
+          </a>
         </div>
       </div>
     </div>
