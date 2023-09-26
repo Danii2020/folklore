@@ -1,3 +1,4 @@
+/* eslint-disable quote-props */
 export const categories = [
   {
     id: '1',
@@ -2287,6 +2288,83 @@ export const products = [
         name: 'Placa de música con soporte, foto y canción personalizadas, cualquier lista de reproducción, portada de álbum, regalo de música personalizado, impresiones de músic',
         price: 9.99,
         sellerName: 'pablocraft',
+      },
+    ],
+  },
+];
+
+export const InformationAdSelectorOptions = [
+  {
+    defaultId: 'who_made',
+    defaultTitle: '¿Quién lo hizo?',
+    options: [
+      {
+        optionGroupTitle: 'Selecciona un creador',
+        options: [
+          {
+            optionTitle: 'Lo hice yo',
+            idTitle: 'i_did',
+          },
+          {
+            optionTitle: 'Un miembro de mi tienda',
+            idTitle: 'collective',
+          },
+          {
+            optionTitle: 'Otra empresa o persona',
+            idTitle: 'someone_else',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    defaultId: 'is_supply',
+    defaultTitle: '¿Qué es?',
+    options: [
+      {
+        optionGroupTitle: 'Selecciona un uso',
+        options: [
+          {
+            optionTitle: 'Un producto acabado',
+            idTitle: 'false',
+          },
+          {
+            optionTitle: 'Un material o una herramienta para hacer cosas',
+            idTitle: 'true',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    defaultId: 'when_made',
+    defaultTitle: '¿Cuándo lo hiciste?',
+    options: [
+      {
+        optionGroupTitle: 'Aún no se ha hecho',
+        options: [
+          {
+            optionTitle: 'Hecho por encargo',
+            idTitle: 'made_to_order',
+          },
+        ],
+      },
+      {
+        optionGroupTitle: 'Recientemente',
+        options: [
+          {
+            optionTitle: '2020 - 2023',
+            idTitle: '2020_2023',
+          },
+          {
+            optionTitle: '2010 - 2019',
+            idTitle: '2010_2019',
+          },
+          {
+            optionTitle: '2004 - 2009',
+            idTitle: '2004_2009',
+          },
+        ],
       },
     ],
   },

@@ -126,7 +126,7 @@ const OptionsSection = () => (
             className={`${styles.subTitle} font-medium text-white rounded-full z-0
             md:px-5 px-4 py-2 text-center bg-black transition duration-300 ease-in-out transform
             hover:scale-105 hover:shadow-lg`}
-            href="/tu/tienda/crear"
+            href="/tu/tienda/onboarding/nombre/crear"
           >
             Abre tu tienda en Folklore
           </a>

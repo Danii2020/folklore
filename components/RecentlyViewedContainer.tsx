@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { recentlyViewedProducts } from '../constants/index';
+import { recentlyViewedProducts } from '../constants';
 
 const RecentlyViewedContainer = () => (
   <ul

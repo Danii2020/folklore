@@ -5,6 +5,7 @@ import SinginButton from './SinginButton';
 import AddToCartButton from './AddToCartButton';
 import FilterButton from './FilterButton';
 import SortByButton from './SortByButton';
+import AddVariantsButton from './AddVariantsButton';
 
 export {
   CartButton,
@@ -13,4 +14,5 @@ export {
   AddToCartButton,
   FilterButton,
   SortByButton,
+  AddVariantsButton,
 };

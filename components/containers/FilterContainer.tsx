@@ -243,11 +243,11 @@ const FilterContainer = ({ categories, onHandleClose, category }: Props) => {
             <button
               type="submit"
               form="filter-form"
-              className={`${styles.subTitle} text-white rounded-full justify-center
+              className="lg:text-[20px] md:text-[20px] sm:text-[15px] text-[20px] text-white rounded-full justify-center
             bg-black z-10 px-4 md:py-3 py-1 relative text-center items-center inline-block
             min-w-[48px] min-h-[48px] align-middle mt-5 mr-3 mb-3 w-full
             transition duration-300 ease-in-out transform
-            hover:scale-105 hover:shadow-lg`}
+            hover:scale-105 hover:shadow-lg"
             >
               Aplicar
             </button>

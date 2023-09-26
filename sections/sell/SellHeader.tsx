@@ -15,7 +15,7 @@ const SellHeader = () => (
           pl-2 pr-2 mb-[60px] sell-header-text-container"
         >
           <h1
-            className={`${styles.sellHeroHeading} text-center`}
+            className={`${styles.sellHeroHeading} text-center text-white`}
           >
             Millones de compradores impacientes por ver lo que vendes
           </h1>
@@ -26,7 +26,7 @@ const SellHeader = () => (
               max-w-[120px] min-h-[48px] align-middle my-3 w-full
               transition duration-300 ease-in-out transform
               hover:scale-105 hover:shadow-lg`}
-              href="/tu/tienda/crear"
+              href="/tu/tienda/onboarding/nombre/crear"
             >
               Empezar
             </Link>

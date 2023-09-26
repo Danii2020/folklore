@@ -13,16 +13,18 @@ const FooterHeroSection = () => (
         </h1>
         <div className="md:px-4 px-3 float-none relative">
           <div className="md:px-4 px-3 md:mb-4 mb-3 float-none mx-auto md:w-[58.33%] w-full">
-            <p className={`${styles.subTitle} font-light text-white`}>
+            <p className="lg:text-[20px] md:text-[20px] sm:text-[15px] text-[20px] font-light
+             text-white"
+            >
               Puedes abrir una tienda y empezar a funcionar en minutos
             </p>
           </div>
         </div>
         <Link
-          className={`${styles.subTitle} font-medium text-white rounded-full z-0
+          className="lg:text-[20px] md:text-[20px] sm:text-[15px] text-[20px]font-medium text-white rounded-full z-0
             md:px-5 px-4 py-2 text-center bg-black transition duration-300 ease-in-out transform
-            hover:scale-105 hover:shadow-lg`}
-          href="/tu/tienda/crear"
+            hover:scale-105 hover:shadow-lg"
+          href="/tu/tienda/onboarding/nombre/crear"
         >
           Abre tu tienda en Folklore
         </Link>
